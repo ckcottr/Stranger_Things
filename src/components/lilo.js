@@ -7,7 +7,7 @@ const Login = () => {
             <form onSubmit = {(event) => {} }>  
             <input type = "text" required onChange ={() => {}} placeholder = "username"></input>
             <input type = "password" required onChange={() => {}} placeholder = "password"></input>
-            <button>Log In</button>
+            <button>Log In</button><button>Register</button>
             </form>
           
         </div>
