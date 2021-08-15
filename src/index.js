@@ -1,12 +1,14 @@
 import ReactDOM from 'react-dom';
-import react from 'react';
-import lilo from './components/lilo';
+import React from 'react';
+import login from './components/lilo';
+import Home from './components/home'
 
 const App = ()=>{
     return (
-        < >
+        <>
         <div>
-            <login/>
+            <route path = "/"><home/></route>
+            <route path = "/login"><lilo/></route>
         </div>
         
         </>

@@ -4,9 +4,12 @@ import reactDom from "react-dom"
 const login = (username, password) => {
     return (
         <div>
-            <input type = "text" placeholder = "username">username</input>
-            <input type = "password" placeholder = "password">password</input>
+            <form> onSubmit = {(event) => {} }
+            <input type = "text" required onChange ={() => {}} placeholder = "username"></input>
+            <input type = "password" required onChange={() => {}} placeholder = "password"></input>
             <button>Log In</button>
+            </form>
+          
         </div>
     )
 
@@ -15,4 +18,4 @@ const login = (username, password) => {
 
 
 
-export default lilo;
+export default login;
