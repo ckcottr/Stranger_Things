@@ -1,7 +1,7 @@
-import react from "react"
-import reactDom from "react-dom"
+import React from 'react'
+import ReactDOM from 'react-dom';
 
-const login = (username, password) => {
+const Login = () => {
     return (
         <div>
             <form> onSubmit = {(event) => {} }
@@ -18,4 +18,4 @@ const login = (username, password) => {
 
 
 
-export default login;
+export default Login;

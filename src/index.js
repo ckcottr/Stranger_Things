@@ -7,8 +7,8 @@ const App = ()=>{
     return (
         <>
         <div>
-            <route path = "/"><home/></route>
-            <route path = "/login"><lilo/></route>
+            <route path = "/"><Home/></route>
+            <route path = "/login"><login/></route>
         </div>
         
         </>
