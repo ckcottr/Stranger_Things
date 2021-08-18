@@ -1,11 +1,19 @@
 import ReactDOM from 'react-dom';
-import React from 'react';
+import React, { useState } from 'react';
 import Login from './components/lilo';
 import Home from './components/home'
 import {BrowserRouter as Router, Route, Switch, Link }from "react-router-dom"
 <link href="/public/style.css"></link>
 
 const App = ()=>{
+    const [isNewUser, setIsNewUser] = useState(true)
+    const renderAuthForm = (e) => {
+        if (isNewUser) {
+            return <Login toggleNewUser={setIsNewUser}/>
+        } else {
+            return <Register toggleNewUser />
+        }
+    }
     return (
         <>
         <Router>
