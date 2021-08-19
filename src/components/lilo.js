@@ -1,7 +1,18 @@
 import React from 'react'
 import ReactDOM from 'react-dom';
 
-const Login = () => {
+const Login = ({userToken}) => {
+    const [user, setUser] = useState({username: '', password: ''})
+
+    async function saveToken() {
+        try {
+            const data = await API.makeRequest({'/lilo' , 'posts', user})
+            localstorage.setItem('user-token', data.token);
+            makeToken(data.token);
+        } catch(error) {
+            alert(error)
+        }
+    }
     return (
         <div>
             <form onSubmit = {(event) => {} }>  
