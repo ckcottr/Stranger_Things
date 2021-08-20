@@ -16,25 +16,26 @@ const Login = ({ userToken }) => {
             method: "POST",
             headers: {
                 'Content-Type': 'application/json'
-  },
+            },
             body: JSON.stringify({
-            user: {
-                username: user,
-                password: password
-    }
-  })
-}).then(response => response.json())
-  .then(result => {
-    console.log(result);
-  })
-  .catch(console.error);
+                user: {
+                    username: event.target.username.value,
+                    password: event.target.password.value
+                }
+            })
+        }).then(response => response.json())
+            .then(result => {
+                localStorage.setItem("token", result.data.token)
+                console.log(result);
+            })
+            .catch(console.error);
     }
     return (
         <div>
 
             <form onSubmit={saveToken}>
-                <input type="text" onChange={(event) => setUser (event.target.value) } value = {user} required name="username" placeholder="username"></input>
-                <input type="password" onChange={(event) => setPassword (event.target.value)} value = {password} required name="password" placeholder="password"></input>
+                <input type="text" onChange={(event) => setUser(event.target.value)} value={user} required name="username" placeholder="username"></input>
+                <input type="password" onChange={(event) => setPassword(event.target.value)} value={password} required name="password" placeholder="password"></input>
                 <button>Log In</button>
             </form>
 

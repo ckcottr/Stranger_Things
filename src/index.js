@@ -5,6 +5,7 @@ import Home from './components/home'
 import Posts from './components/posts'
 import Profile from './components/profile'
 import Navbar from './components/navbar';
+import Register from './components/register'
 import { BrowserRouter as Router, Route, Switch, Link, Redirect } from "react-router-dom"
 <link href="/public/style.css"></link>
 
@@ -27,6 +28,7 @@ const App = () => {
                             <Route exact path="/login"><Login /></Route>
                             <Route exact path="/posts"><Posts /></Route>
                             <Route exact path="/profile"><Profile /></Route>
+                            <Route exact path="/register"><Register/></Route>
                             <Route exact path="/"><Home /></Route>
                         </div>
                     </switch>
