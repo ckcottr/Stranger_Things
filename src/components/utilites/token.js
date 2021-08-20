@@ -10,6 +10,6 @@ export default {
     },
 
     removeToken: function() {
-        localstorage.removeItem(TOKEN_KEY);
+        localStorage.removeItem(TOKEN_KEY);
     }
 }
