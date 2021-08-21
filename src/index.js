@@ -9,9 +9,11 @@ import Register from './components/register'
 import { BrowserRouter as Router, Route, Switch, Link, Redirect } from "react-router-dom"
 // import './style/home.css'
 import './components/style/home.css'
+import {getPosts} from './components/utilites/api'
 
 const App = () => {
     const [isNewUser, setIsNewUser] = useState(true)
+    const [postList, setPostList] = useState([])
     const renderAuthForm = (e) => {
         if (isNewUser) {
             return <Login toggleNewUser={setIsNewUser} />
@@ -19,12 +21,13 @@ const App = () => {
             return <Register toggleNewUser />
         }
     }
+    getPosts()
     return (
         <>
             <Router>
                 <Navbar/>
                 <main>
-                    <switch>
+                    <Switch>
                         <div>
                             <Route exact path="/login"><Login /></Route>
                             <Route exact path="/posts"><Posts /></Route>
@@ -32,7 +35,7 @@ const App = () => {
                             <Route exact path="/register"><Register/></Route>
                             <Route exact path="/"><Home /></Route>
                         </div>
-                    </switch>
+                    </Switch>
                 </main>
             </Router>
 
