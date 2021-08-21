@@ -7,7 +7,8 @@ import Profile from './components/profile'
 import Navbar from './components/navbar';
 import Register from './components/register'
 import { BrowserRouter as Router, Route, Switch, Link, Redirect } from "react-router-dom"
-<link href="/public/style.css"></link>
+// import './style/home.css'
+import './components/style/home.css'
 
 const App = () => {
     const [isNewUser, setIsNewUser] = useState(true)
