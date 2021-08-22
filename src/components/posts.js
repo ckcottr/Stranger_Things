@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from "react";
 import ReactDOM from "react-dom";
 import { getPosts } from "./utilites/api";
+import { Sections } from "./postcomponent";
 // import API from '../components/utilites/api';
 // const BASE_URL = 'https://strangers-things.herokuapp.com/api/2015-OKU-RM-WEB-PT/posts'
 // export async function getPosts() {
@@ -23,16 +24,15 @@ const Posts = ({postList, setPostList,}) => {
         // console.log(postAppear)
     }, []);
     console.log(postList);
-const postElement = postList.map((post, i) =>
-<h1>{post.title}</h1>
-// {/* <h2>{post.description}</h2>
-// <h3>{post.price}</h3>
-// <h3>{post.lcoation}</h3> */}
+const postElement = postList.map((post) => 
+    <div>   
+        <h1>{post.title}</h1>
+        <h2>{post.description}</h2>
+        <h3>{post.location}</h3>
+        <h3>{post.price}</h3>
+    </div>
 
-//  <Post title={post.title}
-//                                                 price={post.price}
-//                                                 description={post.description}
-//                                                 location={post.location}/>
+
                                                 );
 
     return (
@@ -45,5 +45,3 @@ const postElement = postList.map((post, i) =>
 
 export default Posts
 
-// fetch -> console.log -> array of posts(useState) -> map over the array -> go back and add a button at the bottom
-// pass it in the props
