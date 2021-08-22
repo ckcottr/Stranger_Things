@@ -27,3 +27,9 @@ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubun
     justify-content: center;
     font-size: 24px;
 }
+
+#listOfPosts{
+    border: 10px solid black;
+    padding: 2%;
+
+}

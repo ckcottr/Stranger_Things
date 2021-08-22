@@ -25,7 +25,7 @@ const Posts = ({postList, setPostList,}) => {
     }, []);
     console.log(postList);
 const postElement = postList.map((post) => 
-    <div>   
+    <div id= "listOfPosts">   
         <h1>{post.title}</h1>
         <h2>{post.description}</h2>
         <h3>{post.location}</h3>
