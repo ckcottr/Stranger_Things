@@ -6,10 +6,10 @@ import navbar from './components/navbar';
 const Home = (userPosts, setUserPosts) => {
     return(
         <div>
-        <h1>On My Block</h1>
-        <p1>Welcome to "On My Block!" A place where you can buy, sell, and trade your unwanted items!</p1>
+        <h1 id="welcome">Welcome to On My Block</h1>
+        <p id="body">Lorem ipsum.</p>
         </div>
     )
 }
 
-export default Home
+export default Home;

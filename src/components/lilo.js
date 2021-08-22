@@ -1,9 +1,17 @@
 //import { link } from 'node: fs/promises';
 import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
+import { useHistory, userHistory } from 'react-router-dom';
 
 
 const Login = ({ userToken }) => {
+    // function handleChange(event) {
+    //     const userKey = event.target.attributes['name'].value
+    //     const newState = { ...user }
+    //     newState[userKey] = event.target.value
+    //     setUser(newState)
+    //}
+    let history = useHistory();
     const [user, setUser] = useState('')
     const [password, setPassword] = useState('')
     async function saveToken(event) {
@@ -26,14 +34,21 @@ const Login = ({ userToken }) => {
             })
             .catch(console.error);
     }
+
+async function onSubmit(e) {
+    e.preventDefault();
+    history.push('/');
+}
+
     return (
         <div>
 
-            <form onSubmit={saveToken}>
+            <form onSubmit={saveToken, onSubmit}>
                 <input type="text" onChange={(event) => setUser(event.target.value)} value={user} required name="username" placeholder="username"></input>
                 <input type="password" onChange={(event) => setPassword(event.target.value)} value={password} required name="password" placeholder="password"></input>
                 <button>Log In</button>
             </form>
+            <h1>Not a member? Create an account to create and send messages!Otherwise login with existing account!</h1>
 
         </div>
     )
