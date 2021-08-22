@@ -1,6 +1,14 @@
 import React from "react"
 import {Link} from "react-router-dom"
 import './style/home.css'
+<<<<<<< HEAD
+=======
+
+
+
+
+
+>>>>>>> a56c319fc818c39457ef82b1876a7efa114205cb
 
 
 

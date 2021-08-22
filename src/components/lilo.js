@@ -2,7 +2,10 @@
 import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
 import { useHistory, userHistory } from 'react-router-dom';
+<<<<<<< HEAD
 
+=======
+>>>>>>> a56c319fc818c39457ef82b1876a7efa114205cb
 
 const Login = ({ userToken }) => {
     // function handleChange(event) {

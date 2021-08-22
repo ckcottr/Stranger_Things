@@ -1,0 +1,35 @@
+#navbar{
+    background-color: black;
+    display:flex;
+    justify-content: space-around;
+    flex:auto;
+}
+
+
+#navbar a:hover{
+    background-color:white ;
+    color: black;
+}
+
+#navbar a{
+    background-color:black;
+    color: white;
+}
+
+#welcome {
+display: flex;
+justify-content: center;
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;;
+}
+
+#body {
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+}
+
+#listOfPosts{
+    border: 10px solid black;
+    padding: 2%;
+
+}
