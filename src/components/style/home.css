@@ -1,6 +1,19 @@
-Link{
-    background-color: aqua;
-    
+#navbar{
+    background-color: black;
+    display:flex;
+    justify-content: space-around;
+    flex:auto;
+}
+
+
+#navbar a:hover{
+    background-color:white ;
+    color: black;
+}
+
+#navbar a{
+    background-color:black;
+    color: white;
 }
 
 #welcome {

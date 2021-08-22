@@ -25,7 +25,9 @@ const App = () => {
     return (
         <>
             <Router>
-                <Navbar />
+                <div id="navbar">
+                    <Navbar />
+                </div>
                 <main>
                     <Switch>
                         <div>
