@@ -1,24 +1,20 @@
+//import { link } from 'node: fs/promises';
 import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
 
+
 const Login = ({ userToken }) => {
-    // function handleChange(event) {
-    //     const userKey = event.target.attributes['name'].value
-    //     const newState = { ...user }
-    //     newState[userKey] = event.target.value
-    //     setUser(newState)
-    //}
     const [user, setUser] = useState('')
     const [password, setPassword] = useState('')
     async function saveToken(event) {
         event.preventDefault()
         fetch('https://strangers-things.herokuapp.com/api/2105-OKU-RM-WEB-PT/users/login', {
             method: "POST",
-            headers: {
-                'Content-Type': 'application/json'
+                headers: {
+                    'Content-Type': 'application/json'
             },
-            body: JSON.stringify({
-                user: {
+                        body: JSON.stringify({
+                                    user: {
                     username: event.target.username.value,
                     password: event.target.password.value
                 }

@@ -5,6 +5,7 @@ const Profile = () => {
     return (
         <div>
             <h1>PROFILE</h1>
+            <picture><button className="uploadImage">Upload Image</button></picture>
         </div>
     )
 }

@@ -1,7 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom"
 
-const Posts = () => {
+const Posts = ({post, setPost}) => {
+    use
     return (
         <div>
             <h1>POSTS</h1>
