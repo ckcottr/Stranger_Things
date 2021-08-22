@@ -25,9 +25,9 @@ const Posts = ({postList, setPostList,}) => {
     console.log(postList);
 const postElement = postList.map((post, i) =>
 <h1>{post.title}</h1>
-{/* <h2>{post.description}</h2>
-<h3>{post.price}</h3>
-<h3>{post.lcoation}</h3> */}
+// {/* <h2>{post.description}</h2>
+// <h3>{post.price}</h3>
+// <h3>{post.lcoation}</h3> */}
 
 //  <Post title={post.title}
 //                                                 price={post.price}
