@@ -1,6 +1,7 @@
 // import { privateDecrypt } from "crypto";
 import React, { useEffect, useState } from "react";
 import ReactDOM from "react-dom";
+import { getPosts } from "./utilites/api";
 // import API from '../components/utilites/api';
 
 const Posts = ({postList, setPostList}) => {
@@ -19,8 +20,7 @@ const Posts = ({postList, setPostList}) => {
 const postElement = postList.map((post, i) => <Post title={post.title}
                                                 price={post.price}
                                                 description={post.description}
-                                                location={post.location}
-/>);
+                                                location={post.location}/>);
 
     return (
         <div>

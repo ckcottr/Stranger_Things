@@ -30,6 +30,7 @@ const Register = () => {
                 <input type="password" required name="password" placeholder="password"></input>
                 <button>Register</button>
             </form>
+            <h1>Already a member? Head over to the Login page and get signed in!</h1>
         </div>
     )
 }

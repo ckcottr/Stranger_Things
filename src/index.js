@@ -9,7 +9,7 @@ import Register from './components/register'
 import { BrowserRouter as Router, Route, Switch, Link, Redirect } from "react-router-dom"
 // import './style/home.css'
 import './components/style/home.css'
-import {getPosts} from './components/utilites/api'
+import { getPosts } from './components/utilites/api'
 
 const App = () => {
     const [isNewUser, setIsNewUser] = useState(true)
@@ -25,14 +25,14 @@ const App = () => {
     return (
         <>
             <Router>
-                <Navbar/>
+                <Navbar />
                 <main>
                     <Switch>
                         <div>
                             <Route exact path="/login"><Login /></Route>
                             <Route exact path="/posts"><Posts /></Route>
                             <Route exact path="/profile"><Profile /></Route>
-                            <Route exact path="/register"><Register/></Route>
+                            <Route exact path="/register"><Register /></Route>
                             <Route exact path="/"><Home /></Route>
                         </div>
                     </Switch>

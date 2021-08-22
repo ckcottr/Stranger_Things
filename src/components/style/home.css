@@ -1,11 +1,6 @@
-header {
-    background-color: blue;
-}
-
-#navbar {
-    display: flex;
-    flex-direction: row;
-    flex: auto;
+Link{
+    background-color: aqua;
+    
 }
 
 #welcome {
