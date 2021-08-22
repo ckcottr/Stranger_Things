@@ -7,7 +7,7 @@ import Profile from './components/profile'
 import Navbar from './components/navbar';
 import Register from './components/register'
 import { BrowserRouter as Router, Route, Switch, Link, Redirect } from "react-router-dom"
-import background from './components/background ';
+import background from './components/background';
 import './components/style/home.css'
 import { getPosts } from './components/utilites/api'
 

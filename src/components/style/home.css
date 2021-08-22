@@ -5,7 +5,6 @@
     flex:auto;
 }
 
-
 #navbar a:hover{
     background-color:white ;
     color: black;
@@ -26,6 +25,7 @@ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubun
     display: flex;
     justify-content: center;
     font-size: 24px;
+
 }
 
 #listOfPosts{
