@@ -1,9 +1,8 @@
-import React from 'react';
+import React from "react"
 import ReactDOM from 'react-dom';
-import navbar from './components/navbar';
 
-//What do we want on the home screen?
-const Home = (userPosts, setUserPosts) => {
+
+const Home = () =>{
     return(
         <div>
         <h1 id="welcome">Welcome to On My Block</h1>
@@ -12,4 +11,4 @@ const Home = (userPosts, setUserPosts) => {
     )
 }
 
-export default Home;
+export default Home

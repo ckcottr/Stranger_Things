@@ -35,11 +35,6 @@ const postElement = postList.map((post) =>
 
                                                 );
 
-<<<<<<< HEAD
-const Posts = ({post, setPost}) => {
-    use
-=======
->>>>>>> a56c319fc818c39457ef82b1876a7efa114205cb
     return (
         <div>
             <h1>POSTS</h1>
@@ -49,4 +44,3 @@ const Posts = ({post, setPost}) => {
 }
 
 export default Posts
-

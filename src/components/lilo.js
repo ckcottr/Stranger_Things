@@ -1,11 +1,6 @@
-//import { link } from 'node: fs/promises';
 import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
 import { useHistory, userHistory } from 'react-router-dom';
-<<<<<<< HEAD
-
-=======
->>>>>>> a56c319fc818c39457ef82b1876a7efa114205cb
 
 const Login = ({ userToken }) => {
     // function handleChange(event) {
@@ -21,11 +16,11 @@ const Login = ({ userToken }) => {
         event.preventDefault()
         fetch('https://strangers-things.herokuapp.com/api/2105-OKU-RM-WEB-PT/users/login', {
             method: "POST",
-                headers: {
-                    'Content-Type': 'application/json'
+            headers: {
+                'Content-Type': 'application/json'
             },
-                        body: JSON.stringify({
-                                    user: {
+            body: JSON.stringify({
+                user: {
                     username: event.target.username.value,
                     password: event.target.password.value
                 }
