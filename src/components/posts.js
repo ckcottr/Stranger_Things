@@ -4,7 +4,7 @@ import ReactDOM from "react-dom";
 import { getPosts } from "./utilites/api";
 // import API from '../components/utilites/api';
 
-const Posts = ({postList, setPostList}) => {
+const Posts = ({postList, setPostList,}) => {
     // useEffect( async function () {
     //     try {
     //         const data = await API.makeRequest(`/api/2015-OKU-RM-WEB-PT/posts`, 'GET');
