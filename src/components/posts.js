@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import ReactDOM from "react-dom";
 import { getPosts } from "./utilites/api";
-import { Sections } from "./postcomponent";
+
 // import API from '../components/utilites/api';
 // const BASE_URL = 'https://strangers-things.herokuapp.com/api/2015-OKU-RM-WEB-PT/posts'
 // export async function getPosts() {
@@ -26,10 +26,10 @@ const Posts = ({postList, setPostList,}) => {
     console.log(postList);
 const postElement = postList.map((post) => 
     <div id= "listOfPosts">   
-        <h1>{post.title}</h1>
-        <h2>{post.description}</h2>
-        <h3>{post.location}</h3>
-        <h3>{post.price}</h3>
+        <h1>Title: {post.title}</h1>
+        <h2>Description: {post.description}</h2>
+        <h3>Location: {post.location}</h3>
+        <h3>Price: {post.price}</h3>
     </div>
 
 
