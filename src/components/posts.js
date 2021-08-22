@@ -3,24 +3,37 @@ import React, { useEffect, useState } from "react";
 import ReactDOM from "react-dom";
 import { getPosts } from "./utilites/api";
 // import API from '../components/utilites/api';
+// const BASE_URL = 'https://strangers-things.herokuapp.com/api/2015-OKU-RM-WEB-PT/posts'
+// export async function getPosts() {
+//     const response = await fetch(BASE_URL)
+//     console.log(response)
+// }
 
 const Posts = ({postList, setPostList,}) => {
-    // useEffect( async function () {
-    //     try {
-    //         const data = await API.makeRequest(`/api/2015-OKU-RM-WEB-PT/posts`, 'GET');
-    //         console.log(data);
-    //         setPostList(data.data.posts);
-    //     } catch (error) {
-    //         console.error(error);
-    //     }
-    // }, []);
+    useEffect( async function () {
+        fetch('https://strangers-things.herokuapp.com/api/2105-OKU-RM-WEB-PT/posts')
+  .then(response => response.json())
+  .then(result => { setPostList(result.data.posts)
+    console.log(result);
+  })
+  .catch(console.error);
+
+        // const postAppear = await getPosts()
+        
+        // console.log(postAppear)
+    }, []);
     console.log(postList);
+const postElement = postList.map((post, i) =>
+<h1>{post.title}</h1>
+{/* <h2>{post.description}</h2>
+<h3>{post.price}</h3>
+<h3>{post.lcoation}</h3> */}
 
-
-const postElement = postList.map((post, i) => <Post title={post.title}
-                                                price={post.price}
-                                                description={post.description}
-                                                location={post.location}/>);
+//  <Post title={post.title}
+//                                                 price={post.price}
+//                                                 description={post.description}
+//                                                 location={post.location}/>
+                                                );
 
     return (
         <div>

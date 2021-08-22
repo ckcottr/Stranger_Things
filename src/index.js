@@ -21,7 +21,7 @@ const App = () => {
             return <Register toggleNewUser />
         }
     }
-    getPosts()
+    
     return (
         <>
             <Router>
@@ -32,7 +32,7 @@ const App = () => {
                     <Switch>
                         <div>
                             <Route exact path="/login"><Login /></Route>
-                            <Route exact path="/posts"><Posts /></Route>
+                            <Route exact path="/posts"><Posts postList={postList} setPostList={setPostList}/></Route>
                             <Route exact path="/profile"><Profile /></Route>
                             <Route exact path="/register"><Register /></Route>
                             <Route exact path="/"><Home /></Route>
