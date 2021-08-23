@@ -25,6 +25,7 @@ const Register = () => {
 
     return (
         <div id="register">
+            <h1>REGISTER</h1>
             <form onSubmit={handleSubmit}>
                 <input type="text" required name="username" placeholder="username"></input>
                 <input type="password" required name="password" placeholder="password"></input>
