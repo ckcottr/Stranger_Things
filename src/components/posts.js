@@ -39,7 +39,7 @@ const Posts = ({ postList, setPostList, }) => {
 
     return (
         <div id="posts">
-            <h1>POSTS</h1>
+            <h1 id= "listOfPosts"> POSTS</h1>
             {postElement}
         </div>
     )

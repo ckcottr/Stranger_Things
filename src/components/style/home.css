@@ -1,3 +1,8 @@
+ html{
+    background-image: url(cubes_2.jpg);
+   background-size: cover;
+}
+
 #navbar{
     background-color: black;
     display: flex;
@@ -26,6 +31,8 @@
 display: flex;
 justify-content: center;
 font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+color: white;
+-webkit-text-stroke: .7px black;
 }
 
 #body {
@@ -33,6 +40,8 @@ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubun
     justify-content: center;
     font-size: 24px;
     overflow-y: auto;
+    color: white;
+    -webkit-text-stroke: .7px black;
     
     
 }
@@ -40,20 +49,28 @@ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubun
 #listOfPosts{
     border: 10px solid black;
     padding: 2%;
+    color:white;
+    -webkit-text-stroke: .7px black;
 }
 
 #profile {
     text-align: center;
     padding: 50px;
+    color: white;
+    -webkit-text-stroke: .7px black;
 }
 
 #register {
     text-align: center;
     padding: 50px;
+    color: white;
+    -webkit-text-stroke: .7px black;
 }
 
 #lilo {
     padding: 50px;
+    color: white;
     text-align: center;
+    -webkit-text-stroke: .7px black;
 }
 
