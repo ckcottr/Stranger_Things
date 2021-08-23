@@ -8,7 +8,7 @@ import Navbar from './components/navbar';
 import Register from './components/register'
 import { BrowserRouter as Router, Route, Switch, Link, Redirect } from "react-router-dom"
 import './components/style/home.css'
-import { getPosts } from './components/utilites/api'
+
 
 const App = () => {
     const [isNewUser, setIsNewUser] = useState(true)
@@ -19,9 +19,9 @@ const App = () => {
         } else {
             return <Register toggleNewUser />
         }
-        
+
     }
-    
+
     return (
         <>
             <Router>
@@ -32,7 +32,7 @@ const App = () => {
                     <Switch>
                         <div>
                             <Route exact path="/login"><Login /></Route>
-                            <Route exact path="/posts"><Posts postList={postList} setPostList={setPostList}/></Route>
+                            <Route exact path="/posts"><Posts postList={postList} setPostList={setPostList} /></Route>
                             <Route exact path="/profile"><Profile /></Route>
                             <Route exact path="/register"><Register /></Route>
                             <Route exact path="/"><Home /></Route>
