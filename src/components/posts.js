@@ -37,7 +37,7 @@ const postElement = postList.map((post) =>
                                                 );
 
     return (
-        <div>
+        <div id="posts">
             <h1>POSTS</h1>
             {postElement}
         </div>

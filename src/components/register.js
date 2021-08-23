@@ -24,13 +24,13 @@ const Register = () => {
 
 
     return (
-        <div>
+        <div id="register">
             <form onSubmit={handleSubmit}>
                 <input type="text" required name="username" placeholder="username"></input>
                 <input type="password" required name="password" placeholder="password"></input>
                 <button>Register</button>
             </form>
-            <h1>Already a member? Head over to the Login page and get signed in!</h1>
+            <h2>Already a member? Head over to the Login page and get signed in!</h2>
         </div>
     )
 }
