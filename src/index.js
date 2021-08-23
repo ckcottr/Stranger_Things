@@ -19,6 +19,7 @@ const App = () => {
         } else {
             return <Register toggleNewUser />
         }
+        
     }
     
     return (
