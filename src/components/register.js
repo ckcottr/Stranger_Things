@@ -34,5 +34,5 @@ const Register = () => {
         </div>
     )
 }
-
+//test
 export default Register
