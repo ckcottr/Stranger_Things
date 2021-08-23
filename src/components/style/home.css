@@ -3,6 +3,9 @@
     display:flex;
     justify-content: space-around;
     flex:auto;
+    width: 100%;
+    height: 50px;
+    font-size: 30px;
 }
 
 #navbar a:hover{
